@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Plus Jakarta Sans";
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#mobilex2, #tablet, #tabletx2, #desktop, #desktopx2 {
+    display: none;
+}
+    
+    
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.headerimg {
+    margin-top: 0.6rem;
+    margin-bottom: 0.7rem;
+    max-width: 9rem;
+    max-height: 3.5rem;
+}
+
+.button {
+    font-weight: 700;
+    font-family: inherit;
+    font-size: initial;
+    border-radius: 2.8rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.headerbtn {
+    background-color:#13183F;
+    color: white;
+    font-size: 1.6rem;
+    width: 14rem;
+    height: 4.8rem;
+}
+
+.headerbtn:hover {
+    background: #666CA3;
+}
+
+.cover {
+    margin: 3.8rem 1.6rem 0 1.6rem;
+}
+
+.head {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #13183F;
+}
+
+.par1 {
+    margin-top: 2.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #83869A;
+}
+
+.coverbtn {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    line-height: 2.6rem;
+    border-radius: 3.15rem;
+    color: white;
+    width: 16.7rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+
+}
+
+.coverbtn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.herodiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.6rem;
+}
+
+
+.box {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.box__content {
+    
+    max-width: 34.4rem;
+}
+
+.boxheader {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 1rem;
+    margin: 0 1.6rem 8rem 1.6rem;
+}
+
+.headertext {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 32px;
+    height: 12rem;
+    color: white;
+    padding: 2.4rem 2.8rem 3.2rem 2.9rem;
+    }
+
+
+.courses {
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+    position: relative;
+}
+    
+.courseheader {
+    margin-top: 2.4rem;
+    font-weight: 800;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    color: #13183F;
+}
+
+.coursepar {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #83869A;
+}
+
+.course__div img {
+    position: absolute;
+    top: -3rem;
+}
+
+.course__div {
+    padding: 3.2rem 2.8rem;
+    background: white;
+    margin-bottom: 4rem;
+}
+
+.course__startlink {
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #13183F;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.6rem 1.6rem;
+
+}
+
+.footerbtn {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    color: white;
+    font-size: 1.6rem;
+    width: 14rem;
+    height: 4.8rem;
+}
+
+.footerbtn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+
+/* Mobilex2 */
+
+@media screen and (min-width: 575px) {
+    #mobile {
+        display: none;
+
+    }
+
+    #mobilex2 {
+        display: block;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    #mobilex2 {
+        display: none;
+    }
+
+    .header__content {
+        margin: 2.4rem 4rem 0 3,9rem;
+
+    }
+
+
+    .cover {
+        display: flex;
+        justify-content: space-between;
+        margin: 3.8rem 0 0 1.6rem;
+
+    }
+
+    .cover__text-content {
+        margin: 10rem 0 0 4rem;
+        max-width: 40rem;
+        
+    }
+
+    
+
+    .herodiv {
+        
+        width: 100%;
+        min-height: 60rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #tablet {
+        display: block;
+        position: absolute;
+        bottom: 5rem;
+        right: -33rem;
+    }
+
+    .box__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 5.6rem;
+        max-width: 69rem;
+        
+    }
+
+    .boxheader, .courses {
+        max-width: 32rem;
+    }
+
+    .footer__content {
+        margin: 0 4rem 0 4rem;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #tablet {
+        transform: scale(1.2);
+        bottom: 4rem;
+        right: -30rem;
+    }
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+
+    .cover__text-content {
+        max-width: 45.7rem;
+        margin: 17.2rem 24.9rem 22.6rem 16.5rem;
+    }
+
+    
+    .header__content {
+        margin: 2.4rem 16.5rem 0 16.5rem;
+    }
+
+    .headerimg {
+        max-width: 11.5rem;
+        max-height: 4.5rem;
+    }
+
+    .headerbtn {
+        max-width: 16.7rem;
+        max-height: 5.6rem;
+    }
+
+
+    .head {
+        font-size: 5.6rem;
+        line-height: 7.1rem;
+    }
+
+    .coverbtn {
+        max-height: 6.3rem;
+    }
+
+    .par1 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+        position: absolute;
+        bottom: 2rem;
+        right: -42rem;
+    }
+
+    .box__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 8rem;
+        max-width: 111rem;
+        margin: 0 4rem 8.6rem 4rem
+    }
+
+    .courseheader {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .coursepar {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .course__startlink {
+        margin-bottom: 4rem;
+    }
+
+    
+
+    .footerbtn {
+        Width: 16.7rem;
+        Height: 5.6rem;
+        font-size: 1.8rem;
+    }
+
+    .footer__content {
+        margin: 0 16.5rem 0 16.5rem;
+
+    }
+}
